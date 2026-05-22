@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 import OrderSuccess from './pages/OrderSuccess';
-import Login from './pages/Login';
+import Login from './pages/UserLogin';
 import MyOrders from './pages/MyOrders'; // Naya page import kiya
 import { CartProvider } from './context/CartContext'; 
 import { AuthProvider } from './context/AuthContext'; 
