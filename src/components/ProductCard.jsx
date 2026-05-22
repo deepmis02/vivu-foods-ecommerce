@@ -1,9 +1,6 @@
-import React, { useContext } from 'react';
-import { CartContext } from '../context/CartContext'; // Apne path ke hisaab se check kar lein
+import React from 'react';
 
 const ProductCard = ({ product }) => {
-  const { addToCart } = useContext(CartContext);
-
   return (
     <div className="product-card">
       {/* Premium Bestseller Badge */}
@@ -38,7 +35,7 @@ const ProductCard = ({ product }) => {
         </div>
         
         {/* Premium Call to Action Button */}
-        <button className="add-to-cart-btn" onClick={() => addToCart(product)}>
+        <button className="add-to-cart-btn">
           Add to Cart
         </button>
       </div>
