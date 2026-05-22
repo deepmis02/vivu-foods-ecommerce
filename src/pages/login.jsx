@@ -19,8 +19,8 @@ const Login = () => {
     setError('');
 
     const url = isLogin 
-      ? 'http://localhost:5000/api/auth/login' 
-      : 'http://localhost:5000/api/auth/register';
+      ? 'https://vivu-foods-backend.onrender.com/api/auth/login' 
+      : 'https://vivu-foods-backend.onrender.com/api/auth/register';
 
     try {
       const response = await fetch(url, {

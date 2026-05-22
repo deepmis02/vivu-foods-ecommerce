@@ -18,7 +18,7 @@ const MyOrders = () => {
 
     const fetchOrders = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/orders/user/${user.id}`);
+        const response = await fetch(`https://vivu-foods-backend.onrender.com/api/orders/user/${user.id}`);
         const data = await response.json();
         setOrders(data);
         setLoading(false);
